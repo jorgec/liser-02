@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>LISER Robotics</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/images/tt.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="assets/css/material-icons.css">
+    <!-- Compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="assets/css/pages.css">
+
+</head>
+
+<body>
+    <div id="sticky-anchor">
+        <nav id="sticky">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo" id="logo"><img src="assets/images/final logo-nav.png" alt="" height="35"></a>
+                <a href="#" data-activates="mobile-menu" id="mobile-burger" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="nav hide-on-med-and-down nav-larger">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html" id="about">about</a></li>
+                    <li><a href="services.html" id="services">services</a></li>
+                    <li class="whatwedo"><a href="" class="active" id="whatwedo">what we do<i class="material-icons right">keyboard_arrow_down</i></a>
+                        <ul>
+                            <li><a href="" id="robot">robot</a></li><br>
+                            <li><a href="" id="software">Software</a></li><br>
+                            <li><a href="" id="exhibits">Exhibits</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="news.html" id="news">News</a></li>
+                    <li><a href="#modal-contact" id="contact">contact us</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-menu">
+                    <!-- <a href="index.html" class="brand-logo  mobile-logo"><img src="assets/images/final logo-nav.png" alt="" height="35"></a><br> -->
+                    <li><a href="index.html" id="m-home" onclick="nav_close()">home</a></li>
+                    <li><a href="about.html" id="m-about" onclick="nav_close()">about</a></li>
+                    <li><a href="services.html" id="m-services" onclick="nav_close()">services</a>
+                    </li>
+                    <li><a class="m-whatwedo active" id="m-whatwedo1" onclick="open_whatwedo()">what we do<i class="material-icons right active" id="arrow-right">keyboard_arrow_right</i>
+                        <i class="material-icons right" id="arrow-down">keyboard_arrow_down</i>
+                    </a></li>
+                    <ul class="m-whatwedo-submenu" id="m-whatwedo-submenu">
+                        <li><a href="" id="m-robot" onclick="nav_close()">Liser Robot</a></li>
+                        <li><a href="" id="m-software" onclick="nav_close()">Minibloq Software</a></li>
+                        <li><a href="" id="m-exhibits" onclick="nav_close()">Exhibits & Workshops</a></li>
+                    </ul>
+                    <li><a href="news.html" id="m-news" onclick="nav_close()">news</a>
+                    </li>
+                    <li><a href="#modal-contact" onclick="nav_close()">contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="modal-contact" class="modal modal-fixed-footer">
+        <div class="modal-content center">
+            <h4>Send us an email</h4>
+            <div class="container">
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input id="full_name" type="text" class="validate">
+                                <label for="first_name">Full Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">email</i>
+                                <input id="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">subject</i>
+                                <input id="subject" type="text" class="validate">
+                                <label for="first_name">Subject</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">message</i>
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Textarea</label>
+                            </div>
+                        </div>
+                        <button class="btn waves-effect waves-light right" type="submit" name="action">SEND
+                        <i class="material-icons right">send</i>
+                    </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a> -->
+    </div>
+    <section class="section-4" id="section-4">
+        <div class="page-container">
+            <div class="row">
+                <div class="liser-robot-img">
+                </div>
+                <div class="col s12">
+                    <div class="liser-description">
+                        <div class="card-panel panel-yellow">
+                            <h3>LISER Robot</h3>
+                            <p>Lorem ipsum dolor sit amet, has natum graeco lobortis ne, mundi graeco qualisque eos an. Ius dicant alterum menandri ei. Pri an stet accusata. Sed dicta legendos an, ea enim natum graeco ius. Virtntur nam ea, mel apeirer maluisset
+                                cu. Viris electramnam ea, mel apeirer maluisset cu. Viris electram ullamsit.Lorem ipsum dolor sit amet, has natum graeco lobortis ne, mundi graeco qualisque eos an. Ius dicant alterum menandri ei. Pri an stet accusata.
+                                Sed dicta legendos an, ea enim natum graeco ius. Virtntur nam ea, mel apeirer maluisset cu. Viris electramnam ea, mel apeirer maluisset cu. Viris electram ullamsit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 robot-img">
+                    <div class="col l12 m12 s12">
+                        <h4 class="center-align">LISER v2.5</h4>
+                        <center><img src="assets/images/liserrobot/1.JPG" class=" materialboxed" alt=""></center>
+                    </div>
+                    <h4 class="center-align">Previous Version</h4>
+                    <div class="col l6 m6 s12">
+                        <center><img src="assets/images/liserrobot/1.JPG" class=" materialboxed" alt=""></center>
+                    </div>
+                    <div class="col l6 m6 s12">
+                        <center><img src="assets/images/liserrobot/1.JPG" class=" materialboxed" alt=""></center>
+                    </div>
+                </div>
+                <div class="col s12">
+                    <div class="why-liser-robot">
+                        <div class="">
+                            <h4 align="center">What's new in the latest robot?</h4>
+                            <p>Lorem ipsum dolor sit amet, has natum graeco lobortis ne, mundi graeco qualisque eos an. Ius dicant alterum menandri ei. Pri an stet accusata. Sed dicta legendos an, ea enim natum graeco ius. Virtntur nam ea, mel apeirer.Lorem
+                                ipsum dolor sit amet, has natum graeco lobortis ne, mundi graeco qualisque eos an. Ius dicant alterum mena.orem ipsum dolor sit amet, has natum graeco lobortis ne, mundi graeco qualisque eos an. Ius dicant alterum menandri
+                                ei. Pri an stet accusata. Sed dicta legendos an, ea enim natum graeco ius. Virtntur nam ea, mel apeirer.Lorem ipsum dolor sit amet, has natum graeco lobortis ne, mundi graeco qualisque eos an. Ius dicant alterum mena.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <div class="section-5" id="section-5">
+        <div class="page-container">
+            <div class="row">
+                <center><img src="assets/images/title/programming software.png" class="responsive-img progsoft-title" alt=""></center>
+                <div class="minibloq-img">
+                </div>
+                <div class="col s12">
+                    <div class="card-panel panel-orange minibloq-desc">
+                        <h3>Minibloq</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non laboriosam quas dolore ullam odio aut dolorum doloremque maiores perquas dolore ullam odio aut dolom odio aut dolorum dorum doloremquequas dolore ullam odio aut dolorum
+                            doloremque maiores perquas dolore ullam odio aut dolorum doloremque maiores per maiores perferendis voluporemque maiores per laborum atque molestias, saepe aspernatur.Lorem ipsum dolor sit a asperur. doloremque maiores perquas
+                            dolore ullam odio aut dolorum doloremque maiores per maiores perferendis voluporemque maiores per laborum atque molestias, saepe aspernatur.Lorem ipsum dolor sit a asperu doloremque maiores perquas dolore ullam odio aut dolorum
+                            doloremque maiores per maiores perferendis voluporemque maiores per laborum atque molestias, saepe aspernatur.Lorem ipsum dolor sit a asperur.r.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row minibloq-txtprog">
+                <div class="col m6 s12 ">
+                    <div class="">
+                        <h4 align="left">Why use Minibloq?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non laboriosam quas dolore ullam odio aut dolorum doloremque maiores perferendis voluptatibus, animi odit voluptate, laborum atque molestias, saepe aspernatur.Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit. Non laboriosam quas dolore ullam odio aut dolorum doloremque maiores perferendis voluptatibus, animi odit voluptate, laborum atque molestias, saepe aspernatur.</p>
+                    </div>
+                </div>
+                <div class="col m6 s12 ">
+                    <div class="">
+                        <h4 align="left">Why not Text Programming?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non laboriosam quas dolore ullam odio aut dolorum doloremque maiores perferendis voluptatibus, animi odit voluptate, laborum atque molestias, saepe aspernatur.Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit. Non laboriosam quas dolore ullam odio aut dolorum doloremque maiores perferendis voluptatibus, animi odit voluptate, laborum atque molestias, saepe aspernatur.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6 center">
+                    <a href="#" class="btn waves-effect waves-light" href="">Minibloq Software<i class="material-icons right">file_download</i></a>
+                </div>
+                <div class="col s6 center">
+                    <a href="#" class="btn waves-effect waves-light" href="">LISER Manual<i class="material-icons right">file_download</i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-6" id="section-6">
+        <div class="page-container">
+            <div class="row">
+                <div class="exhibits-workshops-img">
+                </div>
+                <div class="carousel carousel-slider" id="carousel-height">
+
+                    <div class="caro-previous">
+                        <a onclick="caro_previous()"><img src="assets/images/left-arrow.png" height="50" alt=""></a>
+                    </div>
+
+                    <div class="caro-next">
+                        <a onclick="caro_next()"><img src="assets/images/right-arrow.png" height="50" alt=""></a>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="col l7 m12 s12 caro-img-1">
+
+                        </div>
+                        <div class="col l5 m12 s12">
+                            <div class="card-panel panel-red">
+                                <h4>Title </h4>
+                                Date: 01/01/2001
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non laboriosam quas dolore ullam odio aut dolorum doloremque maiores perferendis voluptatibus, animi odit voluptate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col l7 m12 s12 caro-img-2">
+
+                        </div>
+                        <div class="col l5 m12 s12">
+                            <div class="card-panel panel-blue">
+                                <h4>Title </h4>
+                                Date: 01/01/2001
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non laboriosam quas dolore ullam odio aut dolorum doloremque maiores perferendis voluptatibus, animi odit voluptate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col l7 m12 s12 caro-img-3">
+
+                        </div>
+                        <div class="col l5 m12 s12">
+                            <div class="card-panel panel-yellow black-text">
+                                <h4>Title </h4>
+                                Date: 01/01/2001
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non laboriosam quas dolore ullam odio aut dolorum doloremque maiores perferendis voluptatibus, animi odit voluptate</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l4 s12">
+                    <h5 class="white-text">Social Media</h5>
+                    <div class="col s12">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FLISER-Robotics-114542672367854%2F%3Fref%3Dbr_rs%26sw_fnr_id%3D2784710755%26fnr_t%3D0&tabs=timeline&width=350&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                            width="350" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                        <a href="#"><img src="assets/images/socmed-icons/facebook.png"></a>
+                        <a href="#"><img src="assets/images/socmed-icons/instagram.png"></a>
+                        <a href="#"><img src="assets/images/socmed-icons/twitter.png"></a>
+                    </div>
+                </div>
+                <div class="col l8 s12">
+                    <h5 class="white-text">Location</h5>
+                    <div class="responsive-img ">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252620.3318002418!2d124.49293775311598!3d8.38269988620889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32fff2d9810e9e81%3A0x2edcd5b84a6de2a2!2sCagayan+de+Oro%2C+Misamis+Oriental!5e0!3m2!1sen!2sph!4v1499093770151"
+                            frameborder="0" allowfullscreen></iframe>
+                        <p>32nd Street, Corner 4th Street, Crescent Park West,</p>
+                        <p>Bonifacio Global City</p>
+                        <p>Cagayan de Oro, Philippines</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center">
+                © 2017 Copyright
+            </div>
+        </div>
+    </footer>
+
+    <!--SCRIPT-->
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript " src="assets/js/jquery-2.1.4.min.js "></script>
+    <!-- smooth scrolling -->
+    <script type="text/javascript " src="assets/js/smoothscroll.js "></script>
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript " src="assets/js/materialize.min.js "></script>
+
+
+    <!--EXHIBITS AND WORKSHOPS SLIDER/CAROUSEL-->
+    <script>
+        // Destroy carousel
+
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: true
+        });
+
+        function caro_previous() {
+            $('.carousel').carousel('prev');
+        }
+
+        function caro_next() {
+            $('.carousel').carousel('next');
+        }
+
+        //RESPONSIVE
+        $(window).resize(function() {
+            if ($(window).width() < 500) {
+                // do something here
+                document.getElementById('carousel-height').style.height = "130vh";
+            } else if ($(window).width() < 780) {
+                // do something here
+                document.getElementById('carousel-height').style.height = "125vh";
+            } else if ($(window).width() <= 975) {
+                // do something here
+                document.getElementById('carousel-height').style.height = "130vh";
+            } else {
+                document.getElementById('carousel-height').style.height = "400px";
+            }
+        });
+        $(window).load(function() {
+            if ($(window).width() < 500) {
+                // do something here    
+                document.getElementById('carousel-height').style.height = "130vh";
+            } else if ($(window).width() < 780) {
+                // do something here    
+                document.getElementById('carousel-height').style.height = "115vh";
+            } else if ($(window).width() <= 975) {
+                // do something here    
+                document.getElementById('carousel-height').style.height = "115vh";
+            } else {
+                document.getElementById('carousel-height').style.height = "400px";
+            }
+        });
+    </script>
+    <!-- STICKY NAVBAR-->
+    <script type="text/javascript " src="assets/js/stickynavbar-whatwedo.js "></script>
+    <!--END STICKY-->
+
+    <!--MOBILE -->
+    <script>
+        $(document).ready(function() {
+            $(".button-collapse").sideNav(); // SIDE NAV MOBILE
+            $('.collapsible').collapsible(); //ARCHIVE COLLAPSE
+        });
+    </script>
+    <!--END MOBILE -->
+
+    <!-- SIDENAV -->
+    <script>
+        function nav_close() { //CLOSE SIDE-NAV
+            document.getElementById('mobile-burger').click();
+        }
+
+        function open_whatwedo() {
+
+
+            if ($('.m-whatwedo-submenu').hasClass('active')) {
+                $('.m-whatwedo-submenu').removeClass('active');
+                $('#arrow-right').addClass('active');
+                $('#arrow-down').removeClass('active');
+            } else {
+                $('#arrow-right').removeClass('active');
+                $('.m-whatwedo-submenu').addClass('active');
+                $('#arrow-down').addClass('active');
+
+
+            }
+        }
+    </script>
+
+
+
+
+    <!--MODAL -->
+    <script>
+        $(document).ready(function() {
+            // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+            $('.modal').modal();
+        });
+    </script>
+
+</body>
+
+</html>

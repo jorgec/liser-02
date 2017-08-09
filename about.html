@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>LISER Robotics</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/images/tt.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="assets/css/material-icons.css">
+    <!-- Compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="assets/css/pages.css">
+
+</head>
+
+<body>
+    <div id="sticky-anchor">
+        <nav id="sticky">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo" id="logo"><img src="assets/images/final logo-nav.png" alt="" height="35"></a>
+                <a href="#" data-activates="mobile-menu" id="mobile-burger" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="nav hide-on-med-and-down nav-larger">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="" id="about" class="active">about</a></li>
+                    <li><a href="services.html" id="services">services</a></li>
+                    <li class="whatwedo"><a href="whatwedo.html" id="whatwedo">what we do<i class="material-icons right">keyboard_arrow_down</i></a>
+                        <ul>
+                            <li><a href="whatwedo.html" id="robot">robot</a></li><br>
+                            <li><a href="whatwedo.html" id="software">Software</a></li><br>
+                            <li><a href="whatwedo.html" id="exhibits">Exhibits</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="news.html" id="news">News</a></li>
+                    <li><a href="#modal-contact" id="contact">contact us</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-menu">
+                    <!-- <a href="index.html" class="brand-logo  mobile-logo"><img src="assets/images/final logo-nav.png" alt="" height="35"></a><br> -->
+                    <li><a href="index.html" id="m-home" onclick="nav_close()">home</a></li>
+                    <li><a href="" id="m-about" onclick="nav_close()">about</a></li>
+                    <li><a href="services.html" id="m-services" onclick="nav_close()">services</a>
+                    </li>
+                    <li><a class="m-whatwedo" id="m-whatwedo1" onclick="open_whatwedo()">what we do<i class="material-icons right active" id="arrow-right">keyboard_arrow_right</i>
+                        <i class="material-icons right" id="arrow-down">keyboard_arrow_down</i>
+                    </a></li>
+                    <ul class="m-whatwedo-submenu" id="m-whatwedo-submenu">
+                        <li><a href="whatwedo.html" id="m-robot" onclick="nav_close()">Liser Robot</a></li>
+                        <li><a href="whatwedo.html" id="m-software" onclick="nav_close()">Minibloq Software</a></li>
+                        <li><a href="whatwedo.html" id="m-exhibits" onclick="nav_close()">Exhibits & Workshops</a></li>
+                    </ul>
+
+
+                    <li><a href="" id="m-news" onclick="nav_close()">news</a>
+                    </li>
+                    <li><a href="#modal-contact" onclick="nav_close()">contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="modal-contact" class="modal modal-fixed-footer">
+        <div class="modal-content center">
+            <h4>Send us an email</h4>
+            <div class="container">
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input id="full_name" type="text" class="validate">
+                                <label for="first_name">Full Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">email</i>
+                                <input id="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">subject</i>
+                                <input id="subject" type="text" class="validate">
+                                <label for="first_name">Subject</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">message</i>
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Textarea</label>
+                            </div>
+                        </div>
+                        <button class="btn waves-effect waves-light right" type="submit" name="action">SEND
+                        <i class="material-icons right">send</i>
+                    </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a> -->
+    </div>
+    <section class="section-2" id="section-2">
+        <div class="page-container">
+            <div class="row">
+                <center><img src="assets/images/title/what is liser.png" class="responsive-img about-title" alt=""></center>
+                <div class="about-img">
+                </div>
+                <div class="col s12">
+                    <div class="card-panel panel-blue liser-robotics-description">
+                        <h3>LISER Robotics</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, repellendus! Vitae, odio cum quis, pers piciatis modi excepturi fugasadasdfacilis ea quasi ipsam itaque corporis eos alias magni. Quidem, quisquam, temporibus.LoremLoremLorem
+                            ipsum dolor sit amet, consectetur adipisicing elit. Dicta, repellendus! Vitae, odio cum quis, pers piciatis modi excepturi fugasadasdfacilis ea quasi ipsam itaque corporis eos alias magni. Quidem, quisquam, temporibus.Lorem
+                            ipsum dolor sit amet, consectetur adipisicing elit. Dicta, repellendus! Vitae, odio cum quis, pers piciatis modi excepturi fugasadasdfacilis ea quasi ipsam itaque corporis eos alias magni. Quidem, quisquam, temporibus.Lorem
+                            ipsum dolor sit amet, consectetur adipisicing elit. Dicta, repellendus! Vitae, odio cum quis, pers piciatis modi excepturi temporibusem, quisquam, temporibus.Lorem adipisicing elit. Dicta, repellendus! Vitae, odio cum quis,
+                            pers piciatis modi exce.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <video class="responsive-video " controls>
+                    <source src="assets/images/videos/about.mp4" type="video/mp4 ">
+                </video>
+                </div>
+                <div class="col s12">
+                    <div class=" why-liser">
+                        <h4>Why choose LISER?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, repellendus! Vitae, odio cum quis, pers piciatis modi excepturi fuga facilis ea quasiitae, odio cum quis, pers piciatis modi excepturi fuga facilis ea quasiitae,iciatis
+                            modi excepturi fuga facilis ea quasiitae, odio cum quis, pers piciatis modi excepturi fuga facilis ea quasiitae,iciatis modi excepturi fuga facilis ea quasiitae, odio cum quis, pers piciatis modi excepturi fuga facilis ea quasiitae,
+                            odio cum quis, pers piciatis modi excepturi fuga facilis ea quasi ipsam itaque corporis eos alias magni. Quidem, quisquam,it ait amet, conseitonseitonseit amet, conseit amet, consemet, conseit amet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section-7" id="section-7">
+        <div class="page-container">
+            <div class="row">
+                <center><img src="assets/images/title/our team.png" class=" team-title" alt="" height="100" style="max-width: 100%;"></center>
+                <div class="col l12">
+                    <div class="col l2-5 m12 s12 team-img center">
+                        <center><img src="assets/images/team/diogenes.jpg" alt="" class=" responsive-img circle"></center><br>
+                        <span>Diogenes Armando Pascua</span>
+                        <p>Principal Investigator</p>
+                    </div>
+                    <div class="col l2-5 m12 s12 team-img center">
+                        <center><img src="assets/images/team/bronson.PNG" alt="" class="responsive-img circle"></center>
+                        <br>
+                        <span>Bronson Mabulay</span>
+                        <p>Associate Researcher</p>
+                    </div>
+                    <div class="col l2-5 m12 s12 team-img center">
+                        <center><img src="assets/images/team/aileen.PNG" alt="" class="responsive-img circle"></center>
+                        <br>
+                        <span>Aileen O. Amora</span>
+                        <p>Associate Researcher</p>
+                    </div>
+                    <div class="col l2-5 m12 s12 team-img center">
+                        <center> <img src="assets/images/team/avatar-female.png" alt="" class="responsive-img circle"></center>
+                        <br>
+                        <span>Maricel C. Dalde</span>
+                        <p>Research Staff</p>
+                    </div>
+                    <div class="col l2-5 m12 s12 team-img center">
+                        <center><img src="assets/images/team/avatar-female.png" alt="" class="responsive-img circle"></center>
+                        <br>
+                        <span>Irish Jane Lituanas</span>
+                        <p>Research Staff</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- START PARTNERS -->
+    <div id="section-8">
+        <div class="container">
+            <div class="row">
+                <center><img src="assets/images/title/our partners.png" class="team-title" alt="" height="100" style="max-width: 100%;"></center>
+                <div class="col l12 s12 partners-logo" align="center">
+                    <div class="col l12 s12">
+                        <a href="https://www.usaid.gov/" target="_blank">
+                            <img src="assets/images/partners/USAID-Identity.png" alt="">
+                        </a>
+                        <a href="https://www.rti.org/" target="_blank">
+                            <img src="assets/images/partners/Rti-logo.png" alt="">
+                        </a>
+                    </div>
+                    <br/>
+                    <div class="col l12 s12">
+                        <a href="https://www.theabbasorchard.com/" target="_blank">
+                            <img src="assets/images/partners/theabbasorchard.png" alt="">
+                        </a>
+                        <img src="assets/images/partners/iotcebu.jpeg" alt="">
+                        <a href="http://www.risph.com/" target="_blank">
+                            <img src="assets/images/partners/risPH.png" alt="">
+                        </a>
+                        <a href="http://www.e-gizmo.com/oc/" target="_blank">
+                            <img src="assets/images/partners/e-gizmo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l4 s12">
+                    <h5 class="white-text">Social Media</h5>
+                    <div class="col s12">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FLISER-Robotics-114542672367854%2F%3Fref%3Dbr_rs%26sw_fnr_id%3D2784710755%26fnr_t%3D0&tabs=timeline&width=350&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                            width="350" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                        <a href="#"><img src="assets/images/socmed-icons/facebook.png"></a>
+                        <a href="#"><img src="assets/images/socmed-icons/instagram.png"></a>
+                        <a href="#"><img src="assets/images/socmed-icons/twitter.png"></a>
+                    </div>
+                </div>
+                <div class="col l8 s12">
+                    <h5 class="white-text">Location</h5>
+                    <div class="responsive-img ">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252620.3318002418!2d124.49293775311598!3d8.38269988620889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32fff2d9810e9e81%3A0x2edcd5b84a6de2a2!2sCagayan+de+Oro%2C+Misamis+Oriental!5e0!3m2!1sen!2sph!4v1499093770151"
+                            frameborder="0" allowfullscreen></iframe>
+                        <p>32nd Street, Corner 4th Street, Crescent Park West,</p>
+                        <p>Bonifacio Global City</p>
+                        <p>Cagayan de Oro, Philippines</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center">
+                © 2017 Copyright
+            </div>
+        </div>
+    </footer>
+
+    <!--SCRIPT-->
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript " src="assets/js/jquery-2.1.4.min.js "></script>
+    <!-- smooth scrolling -->
+    <script type="text/javascript " src="assets/js/smoothscroll.js "></script>
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript " src="assets/js/materialize.min.js "></script>
+
+    <!-- STICKY NAVBAR-->
+    <script type="text/javascript " src="assets/js/stickynavbar-about.js "></script>
+    <!--END STICKY-->
+
+    <!--MOBILE -->
+    <script>
+        $(document).ready(function() {
+            $(".button-collapse").sideNav(); // SIDE NAV MOBILE
+            $('.collapsible').collapsible(); //ARCHIVE COLLAPSE
+        });
+    </script>
+    <!--END MOBILE -->
+    <!-- SIDENAV -->
+    <script>
+        function nav_close() { //CLOSE SIDE-NAV
+            document.getElementById('mobile-burger').click();
+        }
+
+        function open_whatwedo() {
+
+
+            if ($('.m-whatwedo-submenu').hasClass('active')) {
+                $('.m-whatwedo-submenu').removeClass('active');
+                $('#arrow-right').addClass('active');
+                $('#arrow-down').removeClass('active');
+            } else {
+                $('#arrow-right').removeClass('active');
+                $('.m-whatwedo-submenu').addClass('active');
+                $('#arrow-down').addClass('active');
+
+
+            }
+        }
+    </script>
+
+    <!--MODAL -->
+    <script>
+        $(document).ready(function() {
+            // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+            $('.modal').modal();
+        });
+    </script>
+</body>
+
+</html>
